@@ -1,0 +1,89 @@
+﻿@model CajaPopular.contrato
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<<<<<<< HEAD
+<h2>Create</h2>
+=======
+<h2>Crear Nuevo</h2>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+<<<<<<< HEAD
+        <h4>contrato</h4>
+=======
+        <h4>Contrato</h4>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.uid, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.uid, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.uid, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.id_solicitud, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.id_solicitud, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.id_solicitud, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.id_solicitante, "id_solicitante", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownList("id_solicitante", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.id_solicitante, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.id_aval, "id_aval", htmlAttributes: new { @class = "control-label col-md-2" })
+<<<<<<< HEAD
+            <div class="col-md-10">
+                @Html.DropDownList("id_aval", null, htmlAttributes: new { @class = "form-control" })
+                @Html.ValidationMessageFor(model => model.id_aval, "", new { @class = "text-danger" })
+            </div>
+=======
+    
+    @*<div class="col-md-10">
+        @Html.DropDownList("id_aval", null, htmlAttributes: new { @class = "form-control" })
+        @Html.ValidationMessageFor(model => model.id_aval, "", new { @class = "text-danger" })
+    </div>*@
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+<<<<<<< HEAD
+                <input type="submit" value="Create" class="btn btn-default" />
+=======
+                <input type="submit" value="Crear" class="btn btn-primary" />
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+<<<<<<< HEAD
+    @Html.ActionLink("Back to List", "Index")
+=======
+    @Html.ActionLink("Regresar", "Index")
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

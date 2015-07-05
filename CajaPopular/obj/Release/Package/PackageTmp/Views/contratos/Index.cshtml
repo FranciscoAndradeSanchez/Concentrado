@@ -1,0 +1,47 @@
+﻿@model IEnumerable<CajaPopular.contrato>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<<<<<<< HEAD
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+=======
+<h2>Contratos.</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_solicitud)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rel_solicitante_aval.id_solicitante)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_solicitud)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rel_solicitante_aval.id_solicitante)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.uid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.uid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.uid })
+        </td>
+    </tr>
+}
+
+</table>

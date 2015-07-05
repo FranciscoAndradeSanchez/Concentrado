@@ -1,0 +1,95 @@
+﻿@model IEnumerable<CajaPopular.balance>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<<<<<<< HEAD
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+=======
+<h2>Balances.</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.descripcion)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cantidad)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_captura)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_vencimiento)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.fecha_pago)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.borrado)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.cubierto)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.solicitante.num_solicitante)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usuario.departamento)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.descripcion)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cantidad)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_captura)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_vencimiento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.fecha_pago)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.borrado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.cubierto)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.solicitante.num_solicitante)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario.departamento)
+        </td>
+        <td>
+<<<<<<< HEAD
+            @Html.ActionLink("Edit", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Details", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Delete", "Delete", new { /* id=item.PrimaryKey */ })
+=======
+            @Html.ActionLink("Editar", "Edit", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Detalles", "Details", new { /* id=item.PrimaryKey */ }) |
+            @Html.ActionLink("Borrar", "Delete", new { /* id=item.PrimaryKey */ })
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+        </td>
+    </tr>
+}
+
+</table>

@@ -1,0 +1,77 @@
+﻿@model IEnumerable<CajaPopular.usuario>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<<<<<<< HEAD
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+=======
+<h2>Usuarios</h2>
+
+<p>
+    @Html.ActionLink("Crear Nuevo", "Create")
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.id_persona)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.departamento)
+        </th>
+        <th>
+           Usuario  @*HTML.DISPLAYNAMEFOR(MODEL => MODEL.USUARIO1)*@
+        </th>
+        @*<th>
+            @Html.DisplayNameFor(model => model.contraseña)
+        </th>*@
+        <th>
+            @Html.DisplayNameFor(model => model.grupo)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.rol)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.id_persona)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.departamento)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usuario1)
+        </td>
+        @*<td>
+            @Html.DisplayFor(modelItem => item.contraseña)
+        </td*@>
+        <td>
+            @Html.DisplayFor(modelItem => item.grupo)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.rol)
+        </td>
+        <td>
+<<<<<<< HEAD
+            @Html.ActionLink("Edit", "Edit", new { id=item.uid }) |
+            @Html.ActionLink("Details", "Details", new { id=item.uid }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.uid })
+=======
+            @Html.ActionLink("Editar", "Edit", new { id=item.uid }) |
+            @Html.ActionLink("Detalles", "Details", new { id=item.uid }) |
+            @Html.ActionLink("Borrar", "Delete", new { id=item.uid })
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+        </td>
+    </tr>
+}
+
+</table>

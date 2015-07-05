@@ -1,0 +1,65 @@
+﻿@model CajaPopular.plazo
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<<<<<<< HEAD
+<h2>Create</h2>
+=======
+<h2>Crear Nuevo</h2>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+    <div class="form-horizontal">
+<<<<<<< HEAD
+        <h4>plazo</h4>
+=======
+        <h4>Plazo</h4>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        <div class="form-group">
+            @Html.LabelFor(model => model.plazo1, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.plazo1, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.plazo1, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.descripcion, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.descripcion, new { htmlAttributes = new { @class = "form-control" } })
+                @Html.ValidationMessageFor(model => model.descripcion, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+<<<<<<< HEAD
+                <input type="submit" value="Create" class="btn btn-default" />
+=======
+                <input type="submit" value="Crear" class="btn btn-primary" />
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+<<<<<<< HEAD
+    @Html.ActionLink("Back to List", "Index")
+=======
+    @Html.ActionLink("Regresar", "Index")
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+}

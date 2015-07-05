@@ -1,0 +1,155 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title - My ASP.NET Application</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+<<<<<<< HEAD
+    <script src="~/Scripts/jquery-2.1.4.js"></script>
+</head>
+<body>
+    <div class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container">
+            <div class="navbar-header" style="font-size: 8pt;">
+=======
+    
+    <script type="text/javascript">
+        function startTime() {
+            today = new Date();
+            h = today.getHours();
+            m = today.getMinutes();
+            s = today.getSeconds();
+            m = checkTime(m);
+            s = checkTime(s);
+            document.getElementById('reloj').innerHTML = h + ":" + m + ":" + s;
+            t = setTimeout('startTime()', 500);
+        }
+        function checkTime(i)
+        { if (i < 10) { i = "0" + i; } return i; }
+        window.onload = function () { startTime(); }
+    </script>
+
+</head>
+<body>
+    <div class="navbar navbar-default navbar-fixed-top" >
+        <div class="container">
+            <div class="navbar-header" style="font-size: 12pt;">
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+<<<<<<< HEAD
+                @Html.ActionLink("Caja Popular San Rafael", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })
+=======
+                <a href="http://localhost:2128/">
+                    <img src="~/Images/logo.png" alt="Caja San Rafael" style="width: 200px; height: 40px; margin-top: 0px;" />
+                </a>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+
+                    <li>@Html.ActionLink("Inicio", "Index", "Home")</li>
+<<<<<<< HEAD
+                    @*<li>@Html.ActionLink("Cotizacion", "Cotizacion", "Home")</li>*@
+                    <li>@Html.ActionLink("Cotizaciones", "Create", "Cotizaciones")</li>
+                    <li>@Html.ActionLink("Contratos", "Create", "contratos")</li>
+                    <li>@Html.ActionLink("Cobranza", "Create", "balances")</li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Cobranza ></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Capturar", "Create", "balances")</li>
+                            <li>@Html.ActionLink("Listar", "Index", "balances")</li>
+                            <li>@Html.ActionLink("Editar Captura", "Edit", "balances")</li>
+                            <li>@Html.ActionLink("Borrar Captura", "Delete", "balances")</li>
+
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Generar Recibos", "Generate", "balances")</li>
+                            <li>@Html.ActionLink("Estados de Cuenta", "EstadosCuenta", "balances")</li>
+                            <li>@Html.ActionLink("Capturar Layout", "Layout", "balances")</li>
+                          
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Reportes", "Reportes", "balances")</li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Servicios ></a>
+=======
+                    <li>@Html.ActionLink("Cotizaciones", "Index", "Cotizaciones")</li>
+                    <li>@Html.ActionLink("Contratos", "Index", "contratos")</li>
+                    <li>@Html.ActionLink("Cobranza", "Index", "balances")</li>
+                    
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Servicios</a>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+                        <ul class="dropdown-menu" role="menu">
+                            <li>@Html.ActionLink("Persona", "Index", "personas")</li>
+                            <li>@Html.ActionLink("Usuarios", "Index", "usuarios")</li>
+                            <li>@Html.ActionLink("Solicitantes", "Index", "solicitantes")</li>
+                            <li>@Html.ActionLink("Avales", "Index", "avals")</li>
+<<<<<<< HEAD
+=======
+                            <li>@Html.ActionLink("Solicitante-Aval", "Index", "rel_solicitante_aval")</li>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Plazos", "Index", "plazos")</li>
+                            <li>@Html.ActionLink("Tasas", "Index", "tasas")</li>
+                            <li class="divider"></li>
+                            <li>@Html.ActionLink("Solicitudes", "Index", "solicitudes")</li>
+                        </ul>
+                    </li>
+<<<<<<< HEAD
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+=======
+
+                    <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Formatos</a>                
+                        <ul class="dropdown-menu" role="menu"> 
+                                <li><a href="~/Images/Empleado.pdf" rel="prev" media="screen" target="_blank">Datos del empleado</a></li>
+                                <li><a href="~/Images/Solicitud.pdf" rel="prev" media="screen" target="_blank">Solicitud</a></li>
+                                <li><a href="~/Images/Contrato.pdf" rel="prev" media="screen" target="_blank">Contrato</a></li>
+                                <li><a href="~/Images/Pagare.pdf" rel="prev" media="screen" target="_blank">Pagaré</a></li>
+                        </ul>
+                    </li>
+
+                    <li>@Html.ActionLink("Contacto", "Contact", "Home")</li>
+
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+                </ul>
+                @Html.Partial("_LoginPartial")
+            </div>
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+<<<<<<< HEAD
+        <div class="jumbotron">
+            <footer>
+                <p>Caja Popular San Rafael &copy; @DateTime.Now.Year - Contact Manager</p>
+=======
+        <div class="well well-lg">
+            <footer>
+                <p>Caja Popular San Rafael &copy; @DateTime.Now.Year - Todos los derechos reservados.
+
+                <img src="~/Images/logo.png" alt="Caja San Rafael" style="width: 125px; height: 25px" /></p>
+                                
+                <div id="reloj" style="font-size:20px;"></div>
+                
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+            </footer>
+        </div>
+    </div>
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+<<<<<<< HEAD
+=======
+
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+</body>
+</html>

@@ -1,0 +1,48 @@
+﻿@model CajaPopular.aval
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<<<<<<< HEAD
+<h2>Details</h2>
+
+<div>
+    <h4>aval</h4>
+=======
+<h2>Detalles</h2>
+
+<div>
+    <h4>Aval</h4>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.num_socio)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.num_socio)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.persona.nombre)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.persona.nombre)
+        </dd>
+
+    </dl>
+</div>
+<p>
+<<<<<<< HEAD
+    @Html.ActionLink("Edit", "Edit", new { id = Model.uid }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
+=======
+    @Html.ActionLink("Editar", "Edit", new { id = Model.uid }) |
+    @Html.ActionLink("Regresar", "Index")    
+</p>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b

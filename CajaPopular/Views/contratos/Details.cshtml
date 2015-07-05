@@ -1,0 +1,47 @@
+﻿@model CajaPopular.contrato
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<<<<<<< HEAD
+<h2>Details</h2>
+
+<div>
+    <h4>contrato</h4>
+=======
+<h2>Detalles.</h2>
+
+<div>
+    <h4>Contrato</h4>
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.id_solicitud)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.id_solicitud)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.rel_solicitante_aval.id_solicitante)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.rel_solicitante_aval.id_solicitante)
+        </dd>
+
+    </dl>
+</div>
+<p>
+<<<<<<< HEAD
+    @Html.ActionLink("Edit", "Edit", new { id = Model.uid }) |
+    @Html.ActionLink("Back to List", "Index")
+=======
+    @Html.ActionLink("Editar", "Edit", new { id = Model.uid }) |
+    @Html.ActionLink("Regresar", "Index")
+>>>>>>> 6e1296d4a735628ed03e8ab9d57936a716dd9e7b
+</p>
